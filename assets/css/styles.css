@@ -296,12 +296,17 @@ a {
 
 /* About */
 .about {
-    margin-top: 207px;
+    margin-top: 138px;
 }
 
 .about__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about__media {
+    position: relative;
 }
 
 .about__label {
@@ -354,6 +359,69 @@ a {
 .about__check-item::after {
     content: url(../icons/check.svg);
     position: absolute;
-    top: 4px;
+    top: 2px;
     left: 5px;
+}
+
+.about__card {
+    width: 136px;
+    border-radius: 10px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0 rgba(85, 240, 255, 0.17);
+    padding: 30px 26px;
+    text-align: center;
+    position: absolute;
+    top: 165px;
+    left: 0;
+}
+
+.about__card-title {
+    color: #fff;
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1; /* 100% */
+}
+
+.about__card-desc {
+    margin-top: 14px;
+    color: #c6f4f9;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.42857; /* 142.857% */
+}
+
+.about__card-deco {
+    position: absolute;
+    top: -39px;
+    right: -32px;
+}
+
+.about__img-wrap {
+    width: 494px;
+    position: relative;
+    margin-left: auto;
+}
+
+.about__img-wrap::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    height: 336px;
+    z-index: -1;
+}
+
+.about__img {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about__media-deco {
+    position: absolute;
+    top: 157px;
+    right: -50px;
+    z-index: -1;
 }
