@@ -583,7 +583,8 @@ a {
 .service__body {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    margin-top: 71px;
+    margin-top: 70px;
+    column-gap: 65px;
 }
 
 .service-item {
@@ -628,4 +629,39 @@ a {
 
 .service-item__more::after {
     content: url(../icons/arrow-up-right.svg);
+}
+
+.service__media {
+    position: relative;
+    margin-top: 18px;
+}
+
+.service__media::after {
+    content: "";
+    position: absolute;
+    height: 350px;
+    left: 16px;
+    right: 16px;
+    border-radius: 10px;
+    bottom: 0;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+
+.service__img {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    display: block;
+}
+
+.service__cta-wrap {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.service__cta {
+    min-width: 214px;
+    color: #ff5b2e;
+    border-color: #ff5b2e;
 }
