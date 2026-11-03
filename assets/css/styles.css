@@ -958,7 +958,7 @@ a {
 
 /* Review */
 .review {
-    padding: 53px 0;
+    padding: 104px 0 52px;
 }
 
 .review__inner {
@@ -989,10 +989,16 @@ a {
     box-shadow: 0 5px 27px 0 rgba(255, 91, 46, 0.3);
 }
 
+.review__list {
+    display: flex;
+}
+
 .review-item {
     display: flex;
     column-gap: 115px;
     align-items: center;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .review-item__media {
@@ -1018,6 +1024,14 @@ a {
     display: block;
     position: relative;
     z-index: 1;
+}
+
+.review__content {
+    overflow: hidden;
+}
+
+.review-item__content {
+    margin-top: 28px;
 }
 
 .review-item__quote {
