@@ -955,3 +955,50 @@ a {
 .pricing-item__item::before {
     content: url(../icons/price-check.svg);
 }
+
+/* Review */
+.review {
+    padding: 53px 0;
+}
+
+.review__inner {
+    display: grid;
+    grid-template-columns: 1fr 974px 1fr;
+    column-gap: 44px;
+    align-items: center;
+}
+
+.review__control {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1.5px solid #ffd1c4;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #ff5b2e;
+}
+
+.review__control:hover {
+    background: #ff5b2e;
+    color: #fff;
+    cursor: pointer;
+    border-color: inherit;
+    box-shadow: 0 5px 27px 0 rgba(255, 91, 46, 0.3);
+}
+
+.review-item {
+    display: flex;
+    column-gap: 115px;
+}
+
+.review-item__media {
+    width: 274px;
+    flex-shrink: 0;
+}
+
+.review-item__img {
+    width: 100%;
+}
